@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="back-video-container">
+            <video loop>
+                <source src="./videos/rain.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="time-select">
+            <button data-time="120">2 minutes</button>
+            <button data-time="300">5 minutes</button>
+            <button data-time="600">10 minutes</button>
+        </div>
+        <div class="video-container">
+            <audio class="song">
+                <source src="./sounds/rain.mp3" />
+            </audio>
+            <span class="play">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+            </span>
+            <h3 class="time-display"></h3>
+        </div>
+        <div class="sound-select">
+            <button data-sound="sounds/rain.mp3" class="btn-season" data-video="videos/rain.mp4">
+                <i class="fa-solid fa-cloud-rain"></i>
+            </button>
+            <button data-sound="sounds/beach.mp3" class="btn-season" data-video="videos/beach.mp4">
+                <i class="fa-solid fa-umbrella-beach"></i>
+            </button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
